@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+<div class="container-base">
+    <div class="links">
+        <h2>Welcome to Social API!</h2>
+
+        <div class="links-a">
+            <a th:href="@{home.html}">Home</a> |
+            <a th:href="@{posts.html}">Posts</a> |
+            <a th:href="@{users.html}">Users</a> |
+            <a th:href="@{locations.html}">Locations</a>
+        </div>
+    </div>
+    <div class="info-home">
+        <div class="row row1">
+            <div class="col col1 first-col1">
+                <h3>API Controllers</h3>
+
+                <div class="row2">
+                    <div class="col2">
+                        <p>GET</p>
+                        <p>GET</p>
+                        <p>GET</p>
+                        <p>GET</p>
+                    </div>
+                    <div class="col2 url">
+                        <p>/home.html</p>
+                        <p>/posts.html</p>
+                        <p>/users.html</p>
+                        <p>/locations.html</p>
+                    </div>
+                    <div class="col2">
+                        <p>home page</p>
+                        <p>get all posts</p>
+                        <p>get all users</p>
+                        <p>get all locations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col1">
+                <h3>Post REST Controllers</h3>
+
+                <div class="row2">
+                    <div class="col2">
+                        <p>GET</p>
+                        <p>GET</p>
+                        <p>GET</p>
+                        <p>POST</p>
+                        <p>PUT</p>
+                        <p>DELETE</p>
+
+                    </div>
+                    <div class="col2 url">
+                        <p>/posts</p>
+                        <p>/posts/{id}</p>
+                        <p>/posts/user/{id}</p>
+                        <p>/posts</p>
+                        <p>/posts/{id}</p>
+                        <p>/posts/{id}</p>
+                    </div>
+                    <div class="col2">
+                        <p>get all</p>
+                        <p>get by id</p>
+                        <p>get by user id</p>
+                        <p>add</p>
+                        <p>update</p>
+                        <p>delete</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col1">
+                <h3>User REST Controllers</h3>
+
+                <div class="row2 thirty-row2">
+                    <div class="col2">
+                        <p>GET</p>
+                        <p>GET</p>
+                        <p>GET</p>
+                        <p>POST</p>
+                        <p>PUT</p>
+                        <p>DELETE</p>
+                    </div>
+                    <div class="col2 url">
+                        <p>/users</p>
+                        <p>/users/{id}</p>
+                        <p>/users/location/{id}</p>
+                        <p>/users</p>
+                        <p>/users</p>
+                        <p>/users</p>
+                    </div>
+                    <div class="col2">
+                        <p>get all</p>
+                        <p>get by id</p>
+                        <p>get by location id</p>
+                        <p>add</p>
+                        <p>update</p>
+                        <p>delete</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col1 last-col1">
+                <h3>Location REST Controllers</h3>
+
+                <div class="row2 last-row2">
+                    <div class="col2">
+                        <p>GET</p>
+                        <p>GET</p>
+                        <p>POST</p>
+                        <p>PUT</p>
+                        <p>DELETE</p>
+                    </div>
+                    <div class="col2 url">
+                        <p>/locations</p>
+                        <p>/locations/{id}</p>
+                        <p>/locations</p>
+                        <p>/locations/{id}</p>
+                        <p>/locations/{id}</p>
+                    </div>
+                    <div class="col2">
+                        <p>get all</p>
+                        <p>get by id</p>
+                        <p>add</p>
+                        <p>update</p>
+                        <p>delete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

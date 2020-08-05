@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Posts</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+<div class="container-base">
+    <div class="links">
+        <h2>Posts</h2>
+
+        <div class="links-a">
+            <a th:href="@{home.html}">Home</a> |
+            <a th:href="@{posts.html}">Posts</a> |
+            <a th:href="@{users.html}">Users</a> |
+            <a th:href="@{locations.html}">Locations</a>
+        </div>
+    </div>
+
+    <div class="details">
+        <h3 align="center">Details of posts</h3>
+
+        <ul style="">
+            <li th:each="post : ${posts}">
+                <span th:text="${post.details}"></span>
+                <hr class="hr-custom">
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -129,6 +129,40 @@ ul {
     padding: 0 15px;
 }
 
+.icon-div {
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.icon-h2 {
+    padding: 15px;
+    opacity: 0.8;
+    transition: 0.3s;
+    background-color: white;
+    color: #000000f0;
+    text-decoration-style: wavy;
+    display: inline-block;
+    border-bottom: 5px solid #3d825c;
+}
+
+.icon-h2:hover {
+    color: #3d825c;
+ }
+
+.icon-h2:hover .link-icon {
+    color: #3d825c;
+}
+
+.link-icon {
+    padding-bottom: 5px;
+    padding-top: 1px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;

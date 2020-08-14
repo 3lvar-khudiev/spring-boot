@@ -2,10 +2,23 @@ body {
     margin: auto;
     font-family: arial, serif;
     font-variant: petite-caps;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 1000% 1000%;
     overflow-x: hidden;
-    animation: gradient 6s ease infinite;
+    background: linear-gradient(130deg,#f00,#1ca1f2,#003880);
+    background-size: auto;
+    background-size: 400% 400%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 ul {
@@ -148,7 +161,7 @@ ul {
 
 .icon-h2:hover {
     color: #3d825c;
- }
+}
 
 .link-icon {
     padding-bottom: 5px;
@@ -157,16 +170,4 @@ ul {
     height: 24px;
     display: inline-block;
     vertical-align: middle;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }

@@ -1,23 +1,23 @@
-$(".first-col1").mouseenter(function () {
-    $(this).animate({
-        left: '68px'
-    }, 200);
-});
+$('.first-col1').hover(
+    function () {
+        $(this).stop().animate({left: '68px'}, 200);
+    },
+    function () {
+        $(this).stop().animate({left: '0'}, 200);
+    },
+    stopAnimation);
 
-$(".first-col1").mouseleave(function () {
-    $(this).animate({
-        left: '0'
-    });
-});
+$('.last-col1').hover(
+    function () {
+        $(this).stop().animate({right: '68px'}, 200);
+    },
+    function () {
+        $(this).stop().animate({right: '0'}, 200);
+    },
+    stopAnimation);
 
-$(".last-col1").mouseenter(function () {
-    $(this).animate({
-        right: '68px'
-    }, 200);
-});
-
-$(".last-col1").mouseleave(function () {
-    $(this).animate({
-        right: '0'
-    });
-});
+function stopAnimation() {
+    if ($(this).hover.length != 0) {
+        $(this).stop();
+    }
+}

@@ -6,9 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import com.company.thymeleafapp.models.Student;
 import com.company.thymeleafapp.services.StudentService;
@@ -20,7 +18,7 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 
-	@RequestMapping("/allstudent")
+	@GetMapping("/allstudents")
 	public String getAll(Model model) {
 
 		List<Student> students = studentService.getAll();
@@ -34,13 +32,13 @@ public class StudentController {
 //		return studentService.getAll();
 	}
 
-	@RequestMapping("/onestudent")
+	@GetMapping("/onestudent")
 	@ResponseBody
 	public Optional<Student> getById(Integer id) {
 		return studentService.getById(id);
 	}
 
-	@RequestMapping(value = "/add", method = RequestMethod.POST)
+	@PostMapping(value = "/add")
 	public String add(Student student) {
 		studentService.add(student);
 		return "redirect:/students/allstudent";

@@ -134,13 +134,13 @@ ul {
     padding: 0 15px;
 }
 
-.icon-div {
+.container-swagger {
     text-align: center;
     width: max-content;
     margin: 0 auto;
 }
 
-.icon-h2 {
+.h2-swagger {
     padding: 15px;
     opacity: 0.8;
     transition: 0.3s;
@@ -151,7 +151,7 @@ ul {
     border-bottom: 5px solid #3d825c;
 }
 
-.icon-h2:hover {
+.h2-swagger:hover {
     color: #3d825c;
     opacity: 1  ;
 }
@@ -163,4 +163,16 @@ ul {
     height: 24px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.link-swagger {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+}
+.link-swagger:hover, .link-swagger:focus, .link-swagger:active {
+    transform: scale(1.15);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.company</groupId>
-    <artifactId>haldemo</artifactId>
+    <artifactId>hal-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>haldemo</name>
+    <name>hal-demo</name>
     <description>Demo project for HAL and HATEOAS</description>
 
     <properties>
